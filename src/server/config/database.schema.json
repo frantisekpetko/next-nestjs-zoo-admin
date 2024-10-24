@@ -1,0 +1,104 @@
+[
+    {
+        "name": "Bill",
+        "columns": [
+            {
+                "nameOfColumn": "place",
+                "notNull": true,
+                "unique": false,
+                "index": false,
+                "datatype": "varchar"
+            }
+        ],
+        "relationships": [
+            {
+                "type": "ManyToOne",
+                "table": "calendar"
+            },
+            {
+                "type": "OneToMany",
+                "table": "product"
+            }
+        ]
+    },
+    {
+        "name": "Calendar",
+        "columns": [
+            {
+                "nameOfColumn": "day",
+                "notNull": true,
+                "unique": false,
+                "index": false,
+                "datatype": "date"
+            }
+        ],
+        "relationships": [
+            {
+                "type": "OneToMany",
+                "table": "bill"
+            }
+        ]
+    },
+    {
+        "name": "Category",
+        "columns": [
+            {
+                "nameOfColumn": "name",
+                "notNull": true,
+                "unique": false,
+                "index": false,
+                "datatype": "varchar"
+            }
+        ],
+        "relationships": [
+            {
+                "type": "ManyToOne",
+                "table": "product"
+            }
+        ]
+    },
+    {
+        "name": "Price",
+        "columns": [
+            {
+                "nameOfColumn": "amount",
+                "notNull": true,
+                "unique": false,
+                "index": false,
+                "datatype": "integer"
+            }
+        ],
+        "relationships": [
+            {
+                "type": "OneToOne",
+                "table": ""
+            }
+        ]
+    },
+    {
+        "name": "Product",
+        "columns": [
+            {
+                "nameOfColumn": "name",
+                "notNull": true,
+                "unique": false,
+                "index": false,
+                "datatype": "varchar"
+            }
+        ],
+        "relationships": [
+            {
+                "type": "ManyToOne",
+                "table": "bill"
+            },
+            {
+                "type": "JoinColumn()@OneToOne",
+                "table": ""
+            },
+            {
+                "type": "OneToMany",
+                "table": "category"
+            }
+        ]
+    }
+]
