@@ -35,7 +35,7 @@
     "@mui/icons-material": "5.16.7",
     "@mui/lab": "^5.0.0-alpha.173",
     "@mui/material": "^5.16.7",
-    "@mui/x-date-pickers": "^7.3.2",
+    "@mui/x-date-pickers": "^7.21.0",
     "@nestjs/apollo": "12.2.0",
     "@nestjs/common": "^10.3.8",
     "@nestjs/config": "^3.3.0",
