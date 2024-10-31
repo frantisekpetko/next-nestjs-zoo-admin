@@ -79,7 +79,7 @@
     "typeorm": "^0.3.11"
   },
   "devDependencies": {
-    "@babel/parser": "^7.24.1",
+    "@babel/parser": "^7.26.2",
     "@babel/types": "^7.26.0",
     "@faker-js/faker": "^9.1.0",
     "@nestjs/cli": "^10.4.5",
