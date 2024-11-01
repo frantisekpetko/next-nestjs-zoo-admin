@@ -90,7 +90,7 @@
     "@types/cookie-parser": "^1.4.3",
     "@types/eslint": "^9.6.1",
     "@types/express": "^5.0.0",
-    "@types/gtag.js": "^0.0.12",
+    "@types/gtag.js": "^0.0.20",
     "@types/jest": "^28.1.8",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/next": "^9.0.0",
