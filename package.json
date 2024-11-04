@@ -119,7 +119,7 @@
     "json-schema": "^0.4.0",
     "mime": "^4.0.4",
     "prettier": "^3.3.3",
-    "sass": "^1.80.5",
+    "sass": "^1.80.6",
     "supertest": "^7.0.0",
     "ts-jest": "^28.0.8",
     "ts-loader": "^9.4.2",
