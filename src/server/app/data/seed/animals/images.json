@@ -1,0 +1,992 @@
+[
+    {
+        "name": "Aguti Azarův",
+        "latinname": "Dasyprocta azarae",
+        "image": "Dasyproctaazarae.jpg"
+    },
+    {
+        "name": "Ara arakanga",
+        "latinname": "Ara macao",
+        "image": "Aramacao.jpg"
+    },
+    {
+        "name": "Arassari zlatolící",
+        "latinname": "Selenidera culik",
+        "image": "Selenideraculik.jpg"
+    },
+    {
+        "name": "Adax",
+        "latinname": "Addax nasomaculatus",
+        "image": "Addaxnasomaculatus.jpg"
+    },
+    {
+        "name": "Antilopa jelení",
+        "latinname": "Antilope cervicapra",
+        "image": "Antilopecervicapra.jpg"
+    },
+    {
+        "name": "Čája chocholatá",
+        "latinname": "Chauna torquata",
+        "image": "Chaunatorquata.jpg"
+    },
+    {
+        "name": "Bodlok Desjardinův",
+        "latinname": "Zebrasoma Desjardinii",
+        "image": "ZebrasomaDesjardinii.jpg"
+    },
+    {
+        "name": "Čáp bělokrký",
+        "latinname": "Ciconia episcopus",
+        "image": "Ciconiaepiscopus.jpg"
+    },
+    {
+        "name": "Dracéna krokodýlovitá",
+        "latinname": "Dracaena guianensis",
+        "image": "Dracaenaguianensis.jpg"
+    },
+    {
+        "name": "Čolek horský",
+        "latinname": "Triturus alpestris",
+        "image": "Triturusalpestris.jpg"
+    },
+    {
+        "name": "Buvolec běločelý",
+        "latinname": "Damaliscus pygargus phillipsi",
+        "image": "Damaliscuspygargusphillipsi.jpg"
+    },
+    {
+        "name": "Ara rudobřichý",
+        "latinname": "Orthopsittaca manilata",
+        "image": "Orthopsittacamanilata.jpg"
+    },
+    {
+        "name": "Čolek drobnoskvrnný",
+        "latinname": "Neurergus microspilotus",
+        "image": "Neurergusmicrospilotus.jpg"
+    },
+    {
+        "name": "Ara malý",
+        "latinname": "Ara severa",
+        "image": "Arasevera.jpg"
+    },
+    {
+        "name": "Anolis obrovský",
+        "latinname": "Anolis equestris",
+        "image": "Anolisequestris.jpg"
+    },
+    {
+        "name": "Ara vojenský",
+        "latinname": "Ara militaris mexicana",
+        "image": "Aramilitarismexicana.jpg"
+    },
+    {
+        "name": "Sup chocholatý",
+        "latinname": "Trigonoceps occipitalis",
+        "image": "Trigonocepsoccipitalis.jpg"
+    },
+    {
+        "name": "Bodlok tominský",
+        "latinname": "Ctenochaetus tominiensis",
+        "image": "Ctenochaetustominiensis.jpg"
+    },
+    {
+        "name": "Aligátor americký",
+        "latinname": "Alligator mississippiensis",
+        "image": "Alligatormississippiensis.jpg"
+    },
+    {
+        "name": "Sup bělohlavý",
+        "latinname": "Gyps fulvus",
+        "image": "Gypsfulvus.jpg"
+    },
+    {
+        "name": "Pelikán skvrnozobý",
+        "latinname": "Pelecanus phillippensis",
+        "image": "Pelecanusphillippensis.jpg"
+    },
+    {
+        "name": "Ostralka štíhlá",
+        "latinname": "Anas acuta",
+        "image": "Anasacuta.jpg"
+    },
+    {
+        "name": "Flétnák",
+        "latinname": "Gymnorhina tibicen",
+        "image": "Gymnorhinatibicen.jpg"
+    },
+    {
+        "name": "Ibis posvátný",
+        "latinname": "Threskiornis aethiopicus",
+        "image": "Threskiornisaethiopicus.jpg"
+    },
+    {
+        "name": "Jeřáb Antigonin",
+        "latinname": "Grus antigone",
+        "image": "Grusantigone.jpg"
+    },
+    {
+        "name": "Ibis rudý",
+        "latinname": "Eudocimus ruber",
+        "image": "Eudocimusruber.jpg"
+    },
+    {
+        "name": "Ibis šedokřídlý",
+        "latinname": "Theristicus melanopis",
+        "image": "Theristicusmelanopis.jpg"
+    },
+    {
+        "name": "Čolek obecný",
+        "latinname": "Triturus vulgaris",
+        "image": "Triturusvulgaris.jpg"
+    },
+    {
+        "name": "Kivi hnědý",
+        "latinname": "Apteryx mantelli",
+        "image": "Apteryxmantelli.jpg"
+    },
+    {
+        "name": "Kasuár přilbový",
+        "latinname": "Casuarius casuarius",
+        "image": "Casuariuscasuarius.jpg"
+    },
+    {
+        "name": "Antilopa koňská",
+        "latinname": "Hippotragus equinus",
+        "image": "Hippotragusequinus.jpg"
+    },
+    {
+        "name": "Kakariki rudočelý",
+        "latinname": "Cyanoramphus auriceps",
+        "image": "Cyanoramphusauriceps.jpg"
+    },
+    {
+        "name": "Bugeranus carunculatus",
+        "latinname": "Grus japonensis",
+        "image": "Grusjaponensis.jpg"
+    },
+    {
+        "name": "Kakariki žlutočelý",
+        "latinname": "Paraneetroplus maculicauda",
+        "image": "Paraneetroplusmaculicauda.jpg"
+    },
+    {
+        "name": "Klokan rudokrký",
+        "latinname": "Macropus rufogriseus",
+        "image": "Macropusrufogriseus.jpg"
+    },
+    {
+        "name": "Kolpík africký",
+        "latinname": "Platalea alba",
+        "image": "Plataleaalba.jpg"
+    },
+    {
+        "name": "Ara hyacintový",
+        "latinname": "Anodorhynchus hyacinthinus",
+        "image": "Anodorhynchushyacinthinus.jpg"
+    },
+    {
+        "name": "Voduška abok",
+        "latinname": "Kobus megaceros",
+        "image": "Kobusmegaceros.jpg"
+    },
+    {
+        "name": "Arassari řasnatý",
+        "latinname": "Pteroglossus beauharnaesii",
+        "image": "Pteroglossusbeauharnaesii.jpg"
+    },
+    {
+        "name": "Želva pralesní",
+        "latinname": "Geochelone denticulata",
+        "image": "Geochelonedenticulata.jpg"
+    },
+    {
+        "name": "Lachtan hřivnatý",
+        "latinname": "Otaria byronia",
+        "image": "Otariabyronia.jpg"
+    },
+    {
+        "name": "Kotinga tříbarvá",
+        "latinname": "Perissocephalus tricolor",
+        "image": "Perissocephalustricolor.jpg"
+    },
+    {
+        "name": "Kudu velký",
+        "latinname": "Tragelaphus strepsiceros",
+        "image": "Tragelaphusstrepsiceros.jpg"
+    },
+    {
+        "name": "Zoborožec hrubozobý",
+        "latinname": "Ceratogymna atrata",
+        "image": "Ceratogymnaatrata.jpg"
+    },
+    {
+        "name": "Kotul veverovitý",
+        "latinname": "Saimiri sciureus",
+        "image": "Saimirisciureus.jpg"
+    },
+    {
+        "name": "Vydra obrovská",
+        "latinname": "Pteronura brasiliensis",
+        "image": "Pteronurabrasiliensis.jpg"
+    },
+    {
+        "name": "Krab Gecarcinus",
+        "latinname": "Gecarcinus quadratus",
+        "image": "Gecarcinusquadratus.jpg"
+    },
+    {
+        "name": "Želva mohutná",
+        "latinname": "Manouria emys",
+        "image": "Manouriaemys.jpg"
+    },
+    {
+        "name": "Labuť černá",
+        "latinname": "Cygnus atratus",
+        "image": "Cygnusatratus.jpg"
+    },
+    {
+        "name": "Zoborožec temný",
+        "latinname": "Aceros plicatus",
+        "image": "Acerosplicatus.jpg"
+    },
+    {
+        "name": "Zebra stepní",
+        "latinname": "Equus quagga",
+        "image": "Equusquagga.jpg"
+    },
+    {
+        "name": "Želva podlouhlá",
+        "latinname": "Indotestudo elongata",
+        "image": "Indotestudoelongata.jpg"
+    },
+    {
+        "name": "Labuť černokrká",
+        "latinname": "Cygnus melanocoryphus",
+        "image": "Cygnusmelanocoryphus.jpg"
+    },
+    {
+        "name": "Ledňáček trpasličí",
+        "latinname": "Ispidina picta",
+        "image": "Ispidinapicta.jpg"
+    },
+    {
+        "name": "Krocan divoký",
+        "latinname": "Meleagris gallopavo f. domestica",
+        "image": "Meleagrisgallopavof.domestica.jpg"
+    },
+    {
+        "name": "Lenochod dvouprstý",
+        "latinname": "Choloepus didactylus",
+        "image": "Choloepusdidactylus.jpg"
+    },
+    {
+        "name": "Lev konžský",
+        "latinname": "Panthera leo bleyenberghi",
+        "image": "Pantheraleobleyenberghi.jpg"
+    },
+    {
+        "name": "Marabu indomalajský",
+        "latinname": "Leptoptilos javanicus",
+        "image": "Leptoptilosjavanicus.jpg"
+    },
+    {
+        "name": "Mravenečník čtyřprstý",
+        "latinname": "Tamandua tetradactyla",
+        "image": "Tamanduatetradactyla.jpg"
+    },
+    {
+        "name": "Zejozob africký",
+        "latinname": "Anastomus lamelligerus",
+        "image": "Anastomuslamelligerus.jpg"
+    },
+    {
+        "name": "Mlok skvrnitý",
+        "latinname": "Salamandra salamandra",
+        "image": "Salamandrasalamandra.jpg"
+    },
+    {
+        "name": "Perlička supí",
+        "latinname": "Acryllium vulturinum",
+        "image": "Acrylliumvulturinum.jpg"
+    },
+    {
+        "name": "Mangusta černokrká",
+        "latinname": "Mungos gambianus",
+        "image": "Mungosgambianus.jpg"
+    },
+    {
+        "name": "Hoko pospolitý",
+        "latinname": "Crax alector",
+        "image": "Craxalector.jpg"
+    },
+    {
+        "name": "Morčák velký",
+        "latinname": "Mergus merganser",
+        "image": "Mergusmerganser.jpg"
+    },
+    {
+        "name": "Tamarín bělovousý",
+        "latinname": "Saguinus mystax",
+        "image": "Saguinusmystax.jpg"
+    },
+    {
+        "name": "Marabu africký",
+        "latinname": "Leptoptilos crumeniferus",
+        "image": "Leptoptiloscrumeniferus.jpg"
+    },
+    {
+        "name": "Sup himálajský",
+        "latinname": "Gyps himalayensis",
+        "image": "Gypshimalayensis.jpg"
+    },
+    {
+        "name": "Pštros dvouprstý",
+        "latinname": "Struthio camelus",
+        "image": "Struthiocamelus.jpg"
+    },
+    {
+        "name": "Chvostan bělolící",
+        "latinname": "Pithecia pithecia",
+        "image": "Pitheciapithecia.jpg"
+    },
+    {
+        "name": "Ropucha kururu",
+        "latinname": "Bufo paracnemis",
+        "image": "Bufoparacnemis.jpg"
+    },
+    {
+        "name": "Hyena skvrnitá",
+        "latinname": "Crocuta crocuta",
+        "image": "Crocutacrocuta.jpg"
+    },
+    {
+        "name": "Husovec stračí",
+        "latinname": "Anseranas semipalmata",
+        "image": "Anseranassemipalmata.jpg"
+    },
+    {
+        "name": "Husa tibetská",
+        "latinname": "Anser indicus",
+        "image": "Anserindicus.jpg"
+    },
+    {
+        "name": "Bodlok žlutý",
+        "latinname": "Zebrasoma flavescens",
+        "image": "Zebrasomaflavescens.jpg"
+    },
+    {
+        "name": "Husice kuří",
+        "latinname": "Cereopsis novaehollandiae",
+        "image": "Cereopsisnovaehollandiae.jpg"
+    },
+    {
+        "name": "Pekari páskovaný",
+        "latinname": "Pecari tajacu",
+        "image": "Pecaritajacu.jpg"
+    },
+    {
+        "name": "Polák malý",
+        "latinname": "Aythya nyroca",
+        "image": "Aythyanyroca.jpg"
+    },
+    {
+        "name": "Pižmovka ostruhatá",
+        "latinname": "Plectropterus gambensis",
+        "image": "Plectropterusgambensis.jpg"
+    },
+    {
+        "name": "Pyskoun rozpůlený",
+        "latinname": "Labroides dimidiatus",
+        "image": "Labroidesdimidiatus.jpg"
+    },
+    {
+        "name": "Tenkozobec opačný",
+        "latinname": "Recurvirostra avosetta",
+        "image": "Recurvirostraavosetta.jpg"
+    },
+    {
+        "name": "Sup kapucín",
+        "latinname": "Necrosyrtes monachus",
+        "image": "Necrosyrtesmonachus.jpg"
+    },
+    {
+        "name": "Puštík tečkovaný",
+        "latinname": "Strix seloputo",
+        "image": "Strixseloputo.jpg"
+    },
+    {
+        "name": "Sup Rüppellův",
+        "latinname": "Gyps rueppellii",
+        "image": "Gypsrueppellii.jpg"
+    },
+    {
+        "name": "Vlhovec červenohřbetý",
+        "latinname": "Cacicus haemorrhous",
+        "image": "Cacicushaemorrhous.jpg"
+    },
+    {
+        "name": "Turako bělobřichý",
+        "latinname": "Corythaixoides leucogaster",
+        "image": "Corythaixoidesleucogaster.jpg"
+    },
+    {
+        "name": "Tapír jihoamerický",
+        "latinname": "Tapirus terrestris",
+        "image": "Tapirusterrestris.jpg"
+    },
+    {
+        "name": "Vlhovec žlutohřbetý",
+        "latinname": "Cacicus cela",
+        "image": "Cacicuscela.jpg"
+    },
+    {
+        "name": "Ústřičník velký",
+        "latinname": "Haematopus ostralegus",
+        "image": "Haematopusostralegus.jpg"
+    },
+    {
+        "name": "Siba ománská",
+        "latinname": "Rhinoptera jayakari",
+        "image": "Rhinopterajayakari.jpg"
+    },
+    {
+        "name": "Tlamovec hlavatý",
+        "latinname": "Cyrtocara moorii",
+        "image": "Cyrtocaramoorii.jpg"
+    },
+    {
+        "name": "Pralesnička dvoubarvá",
+        "latinname": "Phyllobates bicolor",
+        "image": "Phyllobatesbicolor.jpg"
+    },
+    {
+        "name": "Čáp jihoamerický",
+        "latinname": "Ciconia maguari",
+        "image": "Ciconiamaguari.jpg"
+    },
+    {
+        "name": "Zoborožec šedolící",
+        "latinname": "Bycanistes brevis",
+        "image": "Bycanistesbrevis.jpg"
+    },
+    {
+        "name": "Tlamovec příčnopruhý",
+        "latinname": "Pseudotropheus zebra",
+        "image": "Pseudotropheuszebra.jpg"
+    },
+    {
+        "name": "Tlamovec štíhlý",
+        "latinname": "Pseudotropheus elongatus",
+        "image": "Pseudotropheuselongatus.jpg"
+    },
+    {
+        "name": "Zoborožec kaferský",
+        "latinname": "Bucorvus leadbeateri",
+        "image": "Bucorvusleadbeateri.jpg"
+    },
+    {
+        "name": "Tlamovec pestrý",
+        "latinname": "Melanochromis auratus",
+        "image": "Melanochromisauratus.jpg"
+    },
+    {
+        "name": "Matamata třásnitá",
+        "latinname": "Chelus fimbriatus",
+        "image": "Chelusfimbriatus.jpg"
+    },
+    {
+        "name": "Toko žlutozobý",
+        "latinname": "Tockus flavirostris",
+        "image": "Tockusflavirostris.jpg"
+    },
+    {
+        "name": "Želva pardálí",
+        "latinname": "Geochelone pardalis",
+        "image": "Geochelonepardalis.jpg"
+    },
+    {
+        "name": "Dvojzoborožec žlutozobý",
+        "latinname": "Buceros bicornus",
+        "image": "Bucerosbicornus.jpg"
+    },
+    {
+        "name": "Zoborožec hvízdavý",
+        "latinname": "Ceratogymna fistulator fistulator",
+        "image": "Ceratogymnafistulatorfistulator.jpg"
+    },
+    {
+        "name": "Želva ostruhatá",
+        "latinname": "Centrochelys sulcata",
+        "image": "Centrochelyssulcata.jpg"
+    },
+    {
+        "name": "Vousák hnědoprsý",
+        "latinname": "Lybius melanopterus",
+        "image": "Lybiusmelanopterus.jpg"
+    },
+    {
+        "name": "Jeřáb černokrký",
+        "latinname": "Grus nigricollis",
+        "image": "Grusnigricollis.jpg"
+    },
+    {
+        "name": "Slunatec nádherný",
+        "latinname": "Eurypyga helias",
+        "image": "Eurypygahelias.jpg"
+    },
+    {
+        "name": "Hroznýš královský",
+        "latinname": "Boa constrictor",
+        "image": "Boaconstrictor.jpg"
+    },
+    {
+        "name": "Sasanka Haddonova",
+        "latinname": "Stichodactyla haddoni",
+        "image": "Stichodactylahaddoni.jpg"
+    },
+    {
+        "name": "Žirafa Rothschildova",
+        "latinname": "Giraffa camelopardalis rothschildi",
+        "image": "Giraffacamelopardalisrothschildi.jpg"
+    },
+    {
+        "name": "Nesyt bílý",
+        "latinname": "Mycteria cinerea",
+        "image": "Mycteriacinerea.jpg"
+    },
+    {
+        "name": "Páv korunkatý",
+        "latinname": "Pavo cristatus",
+        "image": "Pavocristatus.jpg"
+    },
+    {
+        "name": "Velbloud dvouhrbý",
+        "latinname": "Camelus bactrianus",
+        "image": "Camelusbactrianus.jpg"
+    },
+    {
+        "name": "Pižmovka bělokřídlá",
+        "latinname": "Cairina scutulata",
+        "image": "Cairinascutulata.jpg"
+    },
+    {
+        "name": "Vikuňa",
+        "latinname": "Vicugna vicugna",
+        "image": "Vicugnavicugna.jpg"
+    },
+    {
+        "name": "Slípka modrá",
+        "latinname": "Porphyrio porphyrio",
+        "image": "Porphyrioporphyrio.jpg"
+    },
+    {
+        "name": "Tamarín tmavohřbetý",
+        "latinname": "Saguinus nigricollis graellsi",
+        "image": "Saguinusnigricollisgraellsi.jpg"
+    },
+    {
+        "name": "Snovač rudozobý",
+        "latinname": "Quelea quelea",
+        "image": "Queleaquelea.jpg"
+    },
+    {
+        "name": "Zebu zakrslý",
+        "latinname": "Bos primigenius indicus",
+        "image": "Bosprimigeniusindicus.jpg"
+    },
+    {
+        "name": "Jeřáb laločnatý",
+        "latinname": "Bugeranus carunculatus",
+        "image": "Bugeranuscarunculatus.jpg"
+    },
+    {
+        "name": "Klaun očkatý",
+        "latinname": "Amphiprion ocellaris",
+        "image": "Amphiprionocellaris.jpg"
+    },
+    {
+        "name": "Pelikán australský",
+        "latinname": "Pelecanus conspicillatus",
+        "image": "Pelecanusconspicillatus.jpg"
+    },
+    {
+        "name": "Zoborožec křiklavý",
+        "latinname": "Ceratogymna bucinator",
+        "image": "Ceratogymnabucinator.jpg"
+    },
+    {
+        "name": "Tamarín pestrý",
+        "latinname": "Saguinus bicolor",
+        "image": "Saguinusbicolor.jpg"
+    },
+    {
+        "name": "Surikata",
+        "latinname": "Suricata suricatta",
+        "image": "Suricatasuricatta.jpg"
+    },
+    {
+        "name": "Tlamovec Yellow Belly",
+        "latinname": "Haplochromis sp. Yellow Belly",
+        "image": "Haplochromissp.YellowBelly.jpg"
+    },
+    {
+        "name": "Kolpík růžový",
+        "latinname": "Ajaia ajaja",
+        "image": "Ajaiaajaja.jpg"
+    },
+    {
+        "name": "Tlamovec africký",
+        "latinname": "Cylanotilapia afra",
+        "image": "Cylanotilapiaafra.jpg"
+    },
+    {
+        "name": "Tlamovec Saulosův",
+        "latinname": "Pseudotropheus saulosi",
+        "image": "Pseudotropheussaulosi.jpg"
+    },
+    {
+        "name": "Veverka šedobřichá",
+        "latinname": "Tamiops swinhoei",
+        "image": "Tamiopsswinhoei.jpg"
+    },
+    {
+        "name": "Trubač agami",
+        "latinname": "Psophia crepitans",
+        "image": "Psophiacrepitans.jpg"
+    },
+    {
+        "name": "Vousák černoskvrnný",
+        "latinname": "Capito niger",
+        "image": "Capitoniger.jpg"
+    },
+    {
+        "name": "Leguán zelený",
+        "latinname": "Iguana iguana",
+        "image": "Iguanaiguana.jpg"
+    },
+    {
+        "name": "Nosál červený",
+        "latinname": "Nasua nasua",
+        "image": "Nasuanasua.jpg"
+    },
+    {
+        "name": "Nesyt indomalajský",
+        "latinname": "Mycteria leucocephala",
+        "image": "Mycterialeucocephala.jpg"
+    },
+    {
+        "name": "Bodlok pestrý",
+        "latinname": "Paracanthurus hepatus",
+        "image": "Paracanthurushepatus.jpg"
+    },
+    {
+        "name": "Čáp sedlatý",
+        "latinname": "Ephippiorhynchus senegalensis",
+        "image": "Ephippiorhynchussenegalensis.jpg"
+    },
+    {
+        "name": "Tapír čabrakový",
+        "latinname": "Tapirus indicus",
+        "image": "Tapirusindicus.jpg"
+    },
+    {
+        "name": "Dvojzoborožec nosorožčí",
+        "latinname": "Buceros rhinoceros",
+        "image": "Bucerosrhinoceros.jpg"
+    },
+    {
+        "name": "Čolek luristánský",
+        "latinname": "Neurergus kaiseri",
+        "image": "Neurerguskaiseri.jpg"
+    },
+    {
+        "name": "Dudkovec stromový",
+        "latinname": "Phoeniculus purpureus",
+        "image": "Phoeniculuspurpureus.jpg"
+    },
+    {
+        "name": "Čáp černý",
+        "latinname": "Ciconia nigra",
+        "image": "Ciconianigra.jpg"
+    },
+    {
+        "name": "Dželada hnědá",
+        "latinname": "Theropithecus gelada",
+        "image": "Theropithecusgelada.jpg"
+    },
+    {
+        "name": "Panda červená",
+        "latinname": "Ailurus fulgens",
+        "image": "Ailurusfulgens.jpg"
+    },
+    {
+        "name": "Gibon stříbrný",
+        "latinname": "Hylobates moloch",
+        "image": "Hylobatesmoloch.jpg"
+    },
+    {
+        "name": "Tygr ussurijský",
+        "latinname": "Panthera tigris altaica",
+        "image": "Pantheratigrisaltaica.jpg"
+    },
+    {
+        "name": "Hranobřich Valentinův",
+        "latinname": "Canthigaster valentini",
+        "image": "Canthigastervalentini.jpg"
+    },
+    {
+        "name": "Vlhovec zelený",
+        "latinname": "Psarocolius viridis",
+        "image": "Psarocoliusviridis.jpg"
+    },
+    {
+        "name": "Peřovec tečkovaný",
+        "latinname": "Synodontis nigrita",
+        "image": "Synodontisnigrita.jpg"
+    },
+    {
+        "name": "Jeřáb královský",
+        "latinname": "Balearica regulorum gibbericeps",
+        "image": "Balearicaregulorumgibbericeps.jpg"
+    },
+    {
+        "name": "Jeřáb mandžuský",
+        "latinname": "Cyanoramphus novaezelandiae",
+        "image": "Cyanoramphusnovaezelandiae.jpg"
+    },
+    {
+        "name": "Emu hnědý",
+        "latinname": "Dromaius novaehollandiae",
+        "image": "Dromaiusnovaehollandiae.jpg"
+    },
+    {
+        "name": "Kapybara",
+        "latinname": "Hydrochaeris hydrochaeris",
+        "image": "Hydrochaerishydrochaeris.jpg"
+    },
+    {
+        "name": "Kladivouš africký",
+        "latinname": "Scopus umbretta",
+        "image": "Scopusumbretta.jpg"
+    },
+    {
+        "name": "Krkavec bělokrký",
+        "latinname": "Corvus albicollis",
+        "image": "Corvusalbicollis.jpg"
+    },
+    {
+        "name": "Hadilov písař",
+        "latinname": "Sagittarius serpentarius",
+        "image": "Sagittariusserpentarius.jpg"
+    },
+    {
+        "name": "Zoborožec bělovlasatý",
+        "latinname": "Berenicornis albocristatus",
+        "image": "Berenicornisalbocristatus.jpg"
+    },
+    {
+        "name": "Glyptoper velkoploutvý",
+        "latinname": "Glyptoperichthys gibbiceps",
+        "image": "Glyptoperichthysgibbiceps.jpg"
+    },
+    {
+        "name": "Parníkovka létavá",
+        "latinname": "Tachyeres patachonicus",
+        "image": "Tachyerespatachonicus.jpg"
+    },
+    {
+        "name": "Slon africký",
+        "latinname": "Loxodonta africana",
+        "image": "Loxodontaafricana.jpg"
+    },
+    {
+        "name": "Výr bělavý",
+        "latinname": "Bubo lacteus",
+        "image": "Bubolacteus.jpg"
+    },
+    {
+        "name": "Prase savanové",
+        "latinname": "Phacochoerus africanus africanus",
+        "image": "Phacochoerusafricanusafricanus.jpg"
+    },
+    {
+        "name": "Tukan bělolící",
+        "latinname": "Ramphastos vitellinus",
+        "image": "Ramphastosvitellinus.jpg"
+    },
+    {
+        "name": "Tereka jednovousá",
+        "latinname": "Podocnemis unifilis",
+        "image": "Podocnemisunifilis.jpg"
+    },
+    {
+        "name": "Husička vdovka",
+        "latinname": "Dendrocygna viduata",
+        "image": "Dendrocygnaviduata.jpg"
+    },
+    {
+        "name": "Turako žlutozobý",
+        "latinname": "Musophaga rossae",
+        "image": "Musophagarossae.jpg"
+    },
+    {
+        "name": "Amazoňan oranžovokřídlý",
+        "latinname": "Amazona amazonica",
+        "image": "Amazonaamazonica.jpg"
+    },
+    {
+        "name": "Pralesnička azurová",
+        "latinname": "Dendrobates azureus",
+        "image": "Dendrobatesazureus.jpg"
+    },
+    {
+        "name": "Amazoňan pomoučený",
+        "latinname": "Amazona farinosa virenticeps",
+        "image": "Amazonafarinosavirenticeps.jpg"
+    },
+    {
+        "name": "Pomčík trnonoš",
+        "latinname": "Centropyge acanthops",
+        "image": "Centropygeacanthops.jpg"
+    },
+    {
+        "name": "Ostnák jihoamerický",
+        "latinname": "Jacana jacana",
+        "image": "Jacanajacana.jpg"
+    },
+    {
+        "name": "Nandu Darwinův",
+        "latinname": "Pterocnemia pennata pennata",
+        "image": "Pterocnemiapennatapennata.jpg"
+    },
+    {
+        "name": "Seriema černozobá",
+        "latinname": "Chunga burmeisteris",
+        "image": "Chungaburmeisteris.jpg"
+    },
+    {
+        "name": "Pralesnička strašná",
+        "latinname": "Phyllobates terribilis",
+        "image": "Phyllobatesterribilis.jpg"
+    },
+    {
+        "name": "Kuňka východní",
+        "latinname": "Bombina orientalis",
+        "image": "Bombinaorientalis.jpg"
+    },
+    {
+        "name": "Papoušek šedohlavý",
+        "latinname": "Poicephalus robustus fuscicollis",
+        "image": "Poicephalusrobustusfuscicollis.jpg"
+    },
+    {
+        "name": "Zoborožec havraní",
+        "latinname": "Bucorvus abyssinicus",
+        "image": "Bucorvusabyssinicus.jpg"
+    },
+    {
+        "name": "Sup hnědý",
+        "latinname": "Aegypius monachus",
+        "image": "Aegypiusmonachus.jpg"
+    },
+    {
+        "name": "Tučňák Humboldtův",
+        "latinname": "Spheniscus humboldti",
+        "image": "Spheniscushumboldti.jpg"
+    },
+    {
+        "name": "Pelikán bílý",
+        "latinname": "Pelecanus onocrotalus",
+        "image": "Pelecanusonocrotalus.jpg"
+    },
+    {
+        "name": "Nestor kea",
+        "latinname": "Nestor notabilis",
+        "image": "Nestornotabilis.jpg"
+    },
+    {
+        "name": "Volavka nádherná",
+        "latinname": "Ardeola speciosa",
+        "image": "Ardeolaspeciosa.jpg"
+    },
+    {
+        "name": "Plameňák růžový",
+        "latinname": "Phoenicopterus ruber roseus",
+        "image": "Phoenicopterusruberroseus.jpg"
+    },
+    {
+        "name": "Medvěd pyskatý",
+        "latinname": "Melursus ursinus",
+        "image": "Melursusursinus.jpg"
+    },
+    {
+        "name": "Sup mrchožravý",
+        "latinname": "Neophron percnopterus",
+        "image": "Neophronpercnopterus.jpg"
+    },
+    {
+        "name": "Nesyt africký",
+        "latinname": "Mycteria ibis",
+        "image": "Mycteriaibis.jpg"
+    },
+    {
+        "name": "Ovce somálská",
+        "latinname": "Ovis orientalis aries",
+        "image": "Ovisorientalisaries.jpg"
+    },
+    {
+        "name": "Ovce domácí - valašská",
+        "latinname": "Ovis aries aries",
+        "image": "Ovisariesaries.jpg"
+    },
+    {
+        "name": "Ropucha obrovská",
+        "latinname": "Bufo marinus",
+        "image": "Bufomarinus.jpg"
+    },
+    {
+        "name": "Volavčík člunozobý",
+        "latinname": "Cochlearius cochlearius cochlearius",
+        "image": "Cochleariuscochleariuscochlearius.jpg"
+    },
+    {
+        "name": "Plameňák malý",
+        "latinname": "Phoeniconaias minor",
+        "image": "Phoeniconaiasminor.jpg"
+    },
+    {
+        "name": "Vlhovec červenohlavý",
+        "latinname": "Ablyramphus holosericeus",
+        "image": "Ablyramphusholosericeus.jpg"
+    },
+    {
+        "name": "Nosorožec tuponosý jižní",
+        "latinname": "Ceratotherium simum simum",
+        "image": "Ceratotheriumsimumsimum.jpg"
+    },
+    {
+        "name": "Mravenečník velký",
+        "latinname": "Myrmecophaga tridactyla",
+        "image": "Myrmecophagatridactyla.jpg"
+    },
+    {
+        "name": "Lemur kata",
+        "latinname": "Lemur catta",
+        "image": "Lemurcatta.jpg"
+    },
+    {
+        "name": "Vrubozubec paví",
+        "latinname": "Astronotus ocellatus",
+        "image": "Astronotusocellatus.jpg"
+    },
+    {
+        "name": "Pes novoguinejský",
+        "latinname": "Canis dingo hallstromi",
+        "image": "Canisdingohallstromi.jpg"
+    },
+    {
+        "name": "Vousivka ploskohlavá",
+        "latinname": "Platemys platycephala",
+        "image": "Platemysplatycephala.jpg"
+    }
+]

@@ -3,19 +3,36 @@ import {
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn
+  UpdateDateColumn,
+  Unique,
+  BaseEntity
 } from 'typeorm';
-import { Provider } from 'src/server/common/types/user';
+import { Provider } from '../common/types/user';
+import * as bcrypt from 'bcrypt';
+import { Exclude } from 'class-transformer';
 
-@Entity()
-export class User {
+@Unique(['username'])
+@Entity({ name: 'user' })
+export class User extends BaseEntity {
+
   @PrimaryGeneratedColumn()
   id: number;
+
+  @Column()
+  username: string;
+
+  @Exclude()
+  @Column({ nullable: true })
+  password: string;
+
+  @Exclude()
+  @Column({ nullable: true })
+  salt: string;
 
   @Column({ nullable: false })
   provider: Provider;
 
-  @Column({ nullable: false })
+  @Column({ nullable: true })
   providerId: string;
 
   @Column({ nullable: true })
@@ -37,4 +54,9 @@ export class User {
   @Column()
   @UpdateDateColumn()
   updated_at?: Date;
+
+  async validatePassword(password: string): Promise<boolean> {
+    const hash = await bcrypt.hash(password, this.salt);
+    return hash === this.password;
+  }
 }

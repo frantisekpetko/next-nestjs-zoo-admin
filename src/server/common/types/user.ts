@@ -1,7 +1,8 @@
-export type Provider = 'google' | 'cognito' | 'facebook';
+export type Provider = 'google' | 'cognito' | 'facebook' | 'app';
 
 export class User {
   id!: number;
+  username!: string;
   provider!: Provider;
   providerId!: string;
   firstName!: string;

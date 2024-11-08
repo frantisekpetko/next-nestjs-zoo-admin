@@ -8,4 +8,9 @@ export class AppController {
   getPrivate(@Request() req) {
     return req.user;
   }
+
+  @Get('public')
+  getPublic() {
+    return { message: 'Hello from a public endpoint!' };
+  }
 }

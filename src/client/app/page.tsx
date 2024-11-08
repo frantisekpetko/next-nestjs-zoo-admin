@@ -1,38 +1,75 @@
-'use client';
+"use client";
 
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { DatePicker } from '@mui/x-date-pickers/DatePicker';
-import dayjs, { Dayjs } from 'dayjs';
-import { useState } from 'react';
-import BasicTabs from '@/components/BasicTabs';
+import styled from 'styled-components';
+import Navigation from 'components/common/Navigation';
+import Footer from 'components/common/Footer';
+import Content from 'components/common/Content';
+import { lazy, Suspense, useEffect } from 'react';
+import Heading from 'components/Heading';
+import { useStoreState } from 'my-store';
+import { useStoreActions } from 'my-store';
+//import { Metadata } from 'next';
 
-export default function Page() {
-  const [date, setDate] = useState<Dayjs>(dayjs());
-  return (
-    <main
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
-        alignContent: 'center',
-        alignItems: 'center',
-        width: '65%',
-        maxWidth: '500px',
-      }}
-    >
-      <LocalizationProvider dateAdapter={AdapterDayjs}>
-        <DemoContainer components={['DatePicker']}>
-          <DatePicker
-            label="Basic date picker"
-            format="DD/MM/YYYY"
-            value={date}
-            onChange={(newDate) => setDate(dayjs(newDate))}
-          />
-        </DemoContainer>
-      </LocalizationProvider>
-      <BasicTabs />
-    </main>
-  );
+/*
+export const Heading = styled.h2`
+    text-align: center;
+    padding: 0 0.5em;
+    font-family: 'Nothing You Could Do', cursive;
+    font-display: swap;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem;
+`;
+*/
+
+const LazyNavigation =  lazy(() => import('components/common/Navigation'))
+const LazyFooter =      lazy(() => import('components/common/Footer'));
+const LazyContent =     lazy(() => import('components/common/Content'))
+const LazyHeading =     lazy(() => import('components/Heading'));
+/*
+export const metadata: Metadata = {
+  title: 'Zoo Admin'
 }
+*/
+
+//className={'heading'}
+
+function Page() {
+  //let auth = window.localStorage.getItem('token');
+  const auth = useStoreState((state) => state.user.token);
+  const loadTokenToMemory = useStoreActions((actions) => actions.user.loadTokenToMemory);
+
+  useEffect(() => {
+    loadTokenToMemory();
+    console.log('auth', auth);
+  });
+
+  return (
+    <>
+        <Navigation />
+        <Content>
+          <Heading>
+            {auth ? 'Hey, You are logged in !' : 'Basic zoo admin app'}
+            </Heading>
+        </Content>
+        <Footer/>
+    </>
+  );
+  
+/*
+   return (
+      <Suspense>
+        <div>dgwagawd</div>
+        <LazyNavigation />
+        <LazyContent>
+          <LazyHeading  />
+        </LazyContent>
+          <LazyFooter />
+        </Suspense>
+    );
+
+*/
+}
+
+export default Page;

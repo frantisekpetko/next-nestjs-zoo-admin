@@ -16,6 +16,9 @@ import { StuffModule } from './stuff/stuff.module';
 import { JwtAuthService } from './auth/jwt/jwt-auth.service';
 import { JwtService } from '@nestjs/jwt';
 import { SharedModule } from './shared/shared.module';
+import { AnimalsModule } from './animals/animals.module';
+import { CommandsService } from './commands/commands.service';
+import config from 'ormconfig';
 
 @Module({
   imports: [
@@ -28,26 +31,9 @@ import { SharedModule } from './shared/shared.module';
       playground: { settings: { 'request.credentials': 'include' } },
     }),
     TypeOrmModule.forRootAsync({
-      useFactory: async (configService: ConfigService) => ({
-        type: 'sqlite',
-        database: process.cwd() + configService.get<string>('DATABASE_URL'),
-        logging: true,
-        autoLoadEntities: true,
-        synchronize: true,
-        //entities: ["src/entity/**/*.ts"],
-        entities: ['dist/**/*.entity.js'],
-        migrations: ['src/migration/**/*.ts'],
-        subscribers: ['src/subscriber/**/*.ts'],
-        cli: {
-          entitiesDir: 'src/server/entity',
-          migrationsDir: 'src/server/migration',
-          subscribersDir: 'src/server/subscriber',
-        },
-        ssl:
-          configService.get<string>('NODE_ENV') === 'production'
-            ? { rejectUnauthorized: false }
-            : false,
-      }),
+      useFactory: async (configService: ConfigService) => (
+        config
+      ),
       inject: [ConfigService],
     }),
     ConsoleModule,
@@ -56,9 +42,9 @@ import { SharedModule } from './shared/shared.module';
     ThingsModule,
     OrdersModule,
     StuffModule,
-    SharedModule
+    AnimalsModule
   ],
-  providers: [SeedService, JwtAuthService, JwtService],
+  providers: [SeedService, JwtAuthService, JwtService, CommandsService],
   controllers: [AppController],
 })
 export class AppModule {}

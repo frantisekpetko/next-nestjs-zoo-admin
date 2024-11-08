@@ -1,9 +1,9 @@
 'use client';
 
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, Suspense } from 'react';
 import { useRouter } from 'next/navigation';
 import axios from 'axios';
-import { AuthContext } from '@/components/context/AuthContext';
+import { AuthContext } from 'main-components/context/AuthContext';
 import { useSearchParams } from 'next/navigation'
 
 const Callback = () => {
@@ -47,7 +47,7 @@ const Callback = () => {
     }
   }, [router]);
 
-  return <div>Loading...</div>;
+  return <Suspense><div>Loading...</div></Suspense>;
 };
 
 export default Callback;

@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useContext, useEffect, CSSProperties } from 'react';
-import ProtectedRoute from '../../components/ProtectedRoute/ProtectedRoute';
-import { AuthContext } from '../../components/context/AuthContext';
+import ProtectedRoute from 'main-components/ProtectedRoute/ProtectedRoute';
+import { AuthContext } from 'main-components/context/AuthContext';
 
 const Dashboard = () => {
   const { user, logout, fetchToken, fetchUser, setLoading, setToken }: any = useContext(AuthContext);

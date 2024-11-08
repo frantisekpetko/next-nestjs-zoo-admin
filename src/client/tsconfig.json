@@ -26,6 +26,7 @@
     "strictNullChecks": true,
     "baseUrl": "./",
     "paths": {
+      "@/*": ["./*"],
       "@/components/*": ["components/*"]
     }
   },

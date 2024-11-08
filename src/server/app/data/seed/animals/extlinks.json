@@ -1,0 +1,33 @@
+[
+    {
+        "name": {
+            "name": "Plameňák malý",
+            "latinname": "Phoeniconaias minor",
+            "image": "Phoeniconaias minord9c58193-2707-4202-9772-4688cafb0efb.jpg"
+        },
+        "latinname": "Phoeniconaias minor",
+        "extlinks": [
+            "http://www.eu-nomen.eu/portal/taxon.php?GUID=urn:lsid:faunaeur.org:taxname:96681",
+            "http://datazone.birdlife.org/species/factsheet/22697369",
+            "http://www.irmng.org/aphia.php?p=taxdetails&id=10765385",
+            "http://www.irmng.org/aphia.php?p=taxdetails&id=11375118",
+            "http://www.tierstimmen.org/en/database?field_spec_species_target_id_selective=13594",
+            "https://eunis.eea.europa.eu/species/100744",
+            "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=174978",
+            "https://www.itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=562027",
+            "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=704175",
+            "https://www.cms.int/en/species/phoenicopterus-minor",
+            "https://speciesplus.net/#/taxon_concepts/8419/legal",
+            "https://avibase.bsc-eoc.org/species.jsp?avibaseid=B06A9079584A8D53",
+            "https://ebird.org/species/lesfla1",
+            "https://fauna-eu.org/cdm_dataportal/taxon/39d6a818-0b9a-4b73-98bc-567ea2b260a8",
+            "https://www.gbif.org/species/2481104",
+            "https://www.inaturalist.org/taxa/4259",
+            "https://apiv3.iucnredlist.org/api/v3/taxonredirect/22697369",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=212710",
+            "https://www.marinespecies.org/aphia.php?p=taxdetails&id=567900",
+            "https://www.xeno-canto.org/species/Phoeniconaias-minor",
+            "https://data.nbn.org.uk/Taxa/NHMSYS0001689599"
+        ]
+    }
+]

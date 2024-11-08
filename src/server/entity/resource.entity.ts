@@ -7,8 +7,6 @@ import {
  CreateDateColumn, 
  UpdateDateColumn 
 } from 'typeorm';
-import {Index} from 'typeorm'
-
 
 @Entity({ name: 'resource' })
 export class Resource extends BaseEntity { 
@@ -19,12 +17,10 @@ export class Resource extends BaseEntity {
    type: "varchar",   
   })
   name: string;
-  
-  
+
   @CreateDateColumn()
   createdAt: Date;
 
   @UpdateDateColumn()
   updatedAt: Date;
-
 }

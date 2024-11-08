@@ -1,20 +1,26 @@
 /* eslint-disable prettier/prettier */
 import { DataSource } from 'typeorm';
 import * as dotenv from 'dotenv';
+import { TypeOrmModuleAsyncOptions, TypeOrmModuleOptions, TypeOrmOptionsFactory } from '@nestjs/typeorm';
 
 dotenv.config();
 
-const source = new DataSource({
+const config: TypeOrmModuleOptions = {
   type: "sqlite",
-  database: process.cwd() +  "/src/server/database/database.db",
-  entities: ['src/server/**/*.entity.ts'],
-  migrations: ['src/server/migration/*.{ts,js}'],
+  database: process.cwd() + "/database/database.db",
+  entities: ['dist/src/server/**/*.entity.{ts,js}'],
+  migrations: ['dist/server/migration/*.{ts,js}'],
+  synchronize: true,
+  logging: true,
   extra: {
     ssl:
       process.env.NODE_ENV === 'production'
         ? { rejectUnauthorized: false }
         : false,
   },
-});
+};
 
-export default source;
+//const source: DataSource = new DataSource();
+
+export default config;
+//export default source;
