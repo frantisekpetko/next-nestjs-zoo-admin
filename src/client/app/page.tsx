@@ -1,10 +1,9 @@
 "use client";
 
-import styled from 'styled-components';
 import Navigation from 'components/common/Navigation';
 import Footer from 'components/common/Footer';
 import Content from 'components/common/Content';
-import { lazy, Suspense, useEffect } from 'react';
+import { lazy, useEffect } from 'react';
 import Heading from 'components/Heading';
 import { useStoreState } from 'my-store';
 import { useStoreActions } from 'my-store';
@@ -37,20 +36,20 @@ export const metadata: Metadata = {
 
 function Page() {
   //let auth = window.localStorage.getItem('token');
-  const auth = useStoreState((state) => state.user.token);
+  const token = useStoreState((state) => state.user.token);
   const loadTokenToMemory = useStoreActions((actions) => actions.user.loadTokenToMemory);
 
   useEffect(() => {
     loadTokenToMemory();
-    console.log('auth', auth);
-  });
+    console.log('auth', token);
+  }, []);
 
   return (
     <>
-        <Navigation />
+      <Navigation token={token} />
         <Content>
           <Heading>
-            {auth ? 'Hey, You are logged in !' : 'Basic zoo admin app'}
+            {token ? 'Hey, You are logged in !' : 'Basic zoo admin app'}
             </Heading>
         </Content>
         <Footer/>

@@ -29,7 +29,6 @@ export interface UserModel {
     removeTokenFromStorage: Action<UserModel>;
     saveTokenToStorage: Action<UserModel, string>;
     logOut: Action<UserModel>;
-    getToken: Action<UserModel>;
 }
 
 const user: UserModel = {
@@ -68,9 +67,6 @@ const user: UserModel = {
     }),
     saveTokenToStorage: action((state, payload) => {
         localStorage.setItem('token', payload);
-    }),
-    getToken: action((state: any, actions) => {
-        return localStorage.getItem('token');
     }),
     logOut: action((state: any, actions) => {
         state.username = '';

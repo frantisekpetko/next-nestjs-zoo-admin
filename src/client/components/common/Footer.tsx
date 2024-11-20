@@ -56,7 +56,7 @@ const Footer: FC<{}> = () => {
                 font-display-swap 
                 px-2 
             `}>
-                Powered by NodeJS, NestJS, ReactJS, MUI and my skills.
+                Powered by NodeJS, NestJS, ReactJS, NextJS, MUI and my skills.
             </div>
         </footer>
     );

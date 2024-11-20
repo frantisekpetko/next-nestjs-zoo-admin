@@ -6,7 +6,6 @@ const nothingYouCouldDo = Nothing_You_Could_Do({
   subsets: ['latin']
 });
 
-
 export default function Heading({ children }: { children: ReactNode }) {
     return <>
         <h2

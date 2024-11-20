@@ -14,6 +14,7 @@ import { AccountCircle, Clear as ClearIcon} from '@mui/icons-material';
 
 import { useStoreActions } from 'my-store';
 import Link from 'next/link';
+import { useScreenDetector } from '../../hooks/useScreenDetector';
 import styled from 'styled-components';
 import Flex from 'components/Flex';
 import StyledMQ, { BreakpointsString } from 'tools/styledMQ';
@@ -343,21 +344,30 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { AccountCircle, Clear as ClearIcon } from '@mui/icons-material';
 import { useStoreActions } from 'my-store';
 import Link from 'next/link';
+import { useScreenDetector } from 'hooks/useScreenDetector';
 
-export default function Navigation() {
+export default function Navigation(props: { props: { token: string | null } }) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [open, setOpen] = React.useState(false);
-  let token: string | null = null;
+  const token = props?.token;
+
+  const {isMobile, isTablet, isDesktop} = useScreenDetector();
+  //const [token, setToken] = React.useState<string | null>(null);
+  //const loadTokenToMemory = useStoreActions((actions) => actions?.user?.loadTokenToMemory);
+  //const token = useStoreState((state) => state?.user?.token);
 
   useEffect(() => {
-    token = localStorage.getItem('token');
-  }, []);
+    //token = localStorage.getItem('token');
+    //setToken(localStorage.getItem('token'));
+    console.log('token', token, React.version);
+  });
 
   const handleFullscreenMenu = () => {
     setOpen(!open);
   };
 
   const logOut = useStoreActions((actions) => actions?.user?.logOut);
+
 
   const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -393,14 +403,13 @@ export default function Navigation() {
           overflow-hidden 
           transition-all 
           duration-500 
-          ${open ? 'w-full z-[9999]' : 'w-0'}
+          flex
+          flex-col
+          align-center
+          items-center
+          z-[9999]
+          ${open ? 'w-full h-[100vh]' : 'w-0'}
         `}
-        style={
-            {
-                height: '64px',
-                width: '100%'
-            }
-        }
       >
         <a
           href="#"
@@ -421,10 +430,15 @@ export default function Navigation() {
               href="/"
               onClick={() => handleFullscreenMenu()}
               className="
-                block 
+                flex
                 p-4 
                 text-xl 
                 text-white
+                hover:bg-white
+                hover:text-black
+                w-full
+                justify-center
+                mt-[5rem]
               "
             >
               HomePage
@@ -433,10 +447,14 @@ export default function Navigation() {
               href="/animals"
               onClick={() => handleFullscreenMenu()}
               className="
-                block 
+                flex
                 p-4 
                 text-xl 
                 text-white
+                hover:bg-white
+                hover:text-black
+                w-full
+                justify-center
               "
             >
               Animals
@@ -445,10 +463,14 @@ export default function Navigation() {
               href="/animals/create"
               onClick={() => handleFullscreenMenu()}
               className="
-                block 
+                flex
                 p-4 
                 text-xl 
                 text-white
+                hover:bg-white
+                hover:text-black
+                w-full
+                justify-center
               "
             >
               Create New Animal
@@ -460,10 +482,14 @@ export default function Navigation() {
               href="/login"
               onClick={() => handleFullscreenMenu()}
               className="
-                block 
+                flex 
                 p-4 
                 text-xl 
                 text-white
+               hover:bg-white
+                hover:text-black
+                w-full
+                justify-center
               "
             >
               Login
@@ -472,10 +498,14 @@ export default function Navigation() {
               href="/register"
               onClick={() => handleFullscreenMenu()}
               className="
-                block 
+                flex 
                 p-4 
                 text-xl 
                 text-white
+               hover:bg-white
+                hover:text-black
+                w-full
+                justify-center
               "
             >
               Register
@@ -527,9 +557,13 @@ export default function Navigation() {
                 h-12 
                 w-12 
                 text-2xl 
-                flex 
                 items-center 
                 justify-center
+                hidden
+                sm:hidden
+                md:flex
+                lg:flex
+                xl:flex
               ">
                 {/* You can replace this with your logo or icon */}
                 <span className="ra ra-lion text-5xl"/>
@@ -545,15 +579,24 @@ export default function Navigation() {
           </Typography>
 
           <div className="
-            flex 
-            items-center
-          ">
+                flex 
+                items-center
+              ">
             {token !== null ? (
-              <Box>
+              <Box className="
+                flex 
+                items-center
+              ">
                 <Link
                   href="/animals"
                   className="
                     text-white
+                    hidden
+                    sm:hidden
+                    md:block
+                    lg:block
+                    xl:block
+
                   "
                 >
                   <Button
@@ -569,6 +612,11 @@ export default function Navigation() {
                   href="/animals/create"
                   className="
                     text-white
+                    hidden
+                    sm:hidden
+                    md:block
+                    lg:block
+                    xl:block
                   "
                 >
                   <Button
@@ -610,8 +658,8 @@ export default function Navigation() {
                   onClose={handleClose}
                 >
                   <MenuItem onClick={handleClose}>
-                    {sessionStorage.getItem('username') !== null
-                      ? sessionStorage.getItem('username')
+                    {localStorage.getItem('username') !== null
+                      ? localStorage.getItem('username')
                       : 'Account'}
                   </MenuItem>
                   <MenuItem onClick={handleLogout}>Logout</MenuItem>
@@ -623,6 +671,11 @@ export default function Navigation() {
                   href="/login"
                   className="
                     text-white
+                    hidden
+                    sm:hidden
+                    md:flex
+                    lg:flex
+                    xl:flex
                   "
                 >
                   <Button
@@ -638,6 +691,11 @@ export default function Navigation() {
                   href="/register"
                   className="
                     text-white
+                    hidden
+                    sm:hidden
+                    md:flex
+                    lg:flex
+                    xl:flex
                   "
                 >
                   <Button
@@ -658,11 +716,17 @@ export default function Navigation() {
               sx={{
                 color: 'white',
                 marginLeft: '0.5rem',
+                display: isMobile ? 'flex' : 'none'
               }}
               aria-label="menu"
               onClick={() => handleFullscreenMenu()}
               className="
-                sm:hidden
+                flex
+                sm:flex
+                md:hidden
+                lg:hidden
+                xl:hidden
+                ml-[0.5rem]
               "
             >
               <MenuIcon />

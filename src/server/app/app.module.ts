@@ -15,7 +15,6 @@ import { OrdersModule } from './orders/orders.module';
 import { StuffModule } from './stuff/stuff.module';
 import { JwtAuthService } from './auth/jwt/jwt-auth.service';
 import { JwtService } from '@nestjs/jwt';
-import { SharedModule } from './shared/shared.module';
 import { AnimalsModule } from './animals/animals.module';
 import { CommandsService } from './commands/commands.service';
 import config from 'ormconfig';

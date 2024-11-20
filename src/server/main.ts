@@ -55,4 +55,5 @@ async function setupDatabase() {
   const app = await NestFactory.create(ServerModule);
   const commandsService = app.get(CommandsService);
   await commandsService.data();
+  //await commandsService.getImages();
 }

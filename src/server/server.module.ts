@@ -4,8 +4,6 @@ import { AppModule } from 'src/server/app/app.module';
 import { ViewModule } from 'src/server/view/view.module';
 import { SharedModule } from './app/shared/shared.module';
 import { CommandsService } from './app/commands/commands.service';
-import { TypeOrmModule } from '@nestjs/typeorm';
-import { ConfigService } from '@nestjs/config';
 import { DataSource } from 'typeorm';
 
 @Module({

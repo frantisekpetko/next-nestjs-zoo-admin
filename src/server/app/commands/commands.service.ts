@@ -4,10 +4,8 @@ import {
   InternalServerErrorException,
   Logger,
 } from '@nestjs/common';
-//import { Command, CommandArguments, _cli } from '@squareboat/nest-console';
 import * as fs from 'fs';
 import { resolve } from 'path';
-import { getConnection } from 'typeorm';
 import { Animal } from 'src/server/entity/animal.entity';
 import { Image } from 'src/server/entity/image.entity';
 import { Extlink } from 'src/server/entity/extlink.entity';
@@ -15,16 +13,16 @@ import { User } from 'src/server/entity/user.entity';
 import * as bcrypt from 'bcrypt';
 import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
-import { getRepository } from 'typeorm';
 import { DataSource } from 'typeorm';
-
+import { ConfigService } from '@nestjs/config';
+import { image_search } from 'duckduckgo-images-api';
 //import wiki from 'wikijs';
 
 @Injectable()
 export class CommandsService {
   logger: Logger = new Logger(CommandsService.name);
 
-  constructor(private readonly dataSource: DataSource) {}
+  constructor(private readonly dataSource: DataSource, private readonly config: ConfigService) {}
   /*
   @Command('data', {
     desc: 'Get images from Internet',
@@ -40,13 +38,92 @@ export class CommandsService {
     const animalRepository = this.dataSource.getRepository(Animal);
     const animalsCount = await animalRepository.count();
 
-    if (animalsCount === 0) {
+    if (animalsCount === 0 && usersCount === 0) {
       await this.deleteDataFromTables();
       await this.storeData();
       await this.createSeeds();
       this.logger.log('Data stored successfully');
     }
     //_cli.success('message');
+  }
+
+  async findImage(query) {
+    const apiKey = this.config.get<string>('GOOGLE_CUSTOM_SEARCH_API_KEY');
+    const cx = this.config.get<string>('GOOGLE_CUSTOM_SEARCH_CX');
+
+    const  image_finder = require("image-search-engine")
+    this.logger.log('url', await image_finder.find('Elephant', { size: "medium" }))
+    const results = await image_search({ query: "birds", moderate: true });
+    this.logger.debug({ results });
+    return false;
+    /*
+    this.logger.log("Find image", query);
+    const GoogleImages = require('google-images');
+    const client = new GoogleImages( cx, apiKey);
+
+    const result = (await client.search(query));
+    this.logger.debug(result?.[0]?.url);
+    return result?.[0]?.url;
+    */
+    /*
+    const { getJson } = require("serpapi");
+    getJson({
+      engine: "google",
+      api_key: this.config.get<string>('SERP_API_KEY'), // Get your API_KEY from https://serpapi.com/manage-api-key
+      q: query,
+      location: "Austin, Texas"
+    }, (json) => {
+      this.logger.log(json["organic_results"]);
+    });
+    */
+    /*
+    const url = `https://www.googleapis.com/customsearch/v1`;
+
+    function buildUrl(baseUrl, params) {
+      const queryString = new URLSearchParams(params).toString();
+      return `${baseUrl}?${queryString}`;
+    }
+    
+    // Example usage
+    const baseUrl = 'https://www.googleapis.com/customsearch/v1';
+    const params = {
+      key: apiKey,
+      cx: cx,
+      q: 'Ara malý',
+      searchType: 'image',
+      num: 5,
+      lr: 'lang_cs'
+    };
+    const buildedUrl = buildUrl(baseUrl, params)
+    Logger.log({buildedUrl})
+
+    try {
+      const response = await axios.get(url,
+        {
+          params: {
+            key: apiKey,
+            cx: cx,
+            q: query,
+            searchType: 'image', // Specifies that we are looking for images
+            num: 5, // Number of results to return (max 10 per request)
+            lr: 'lang_cs'
+          }
+        }
+      );
+      const items = response.data.items;
+      Logger.debug(response.data)
+      if (items && items.length > 0) {
+        // Return the first image URL
+        
+        return (items.map(item => item.link))[0];
+      } else {
+        console.log('No images found');
+        return [];
+      }
+    } catch (error) {
+      console.error('Error fetching image:', error);
+    }
+    */
   }
 
   async getImages() {
@@ -67,42 +144,45 @@ export class CommandsService {
       );
 
     const namesObj = JSON.parse(
-      fs.readFileSync(resolve('./src/server/app/data/seed/animals/names.json'), 'utf8'),
+      fs.readFileSync(`${process.cwd()}/src/server/app/data/seed/animals/names.json`, 'utf8'),
     );
 
     const latinnamesObj = JSON.parse(
       fs.readFileSync(
-        resolve('./src/server/app/data/seed/animals/latinnames.json'),
+        `${process.cwd()}/src/server/app/data/seed/animals/latinnames.json`,
         'utf8',
       ),
     );
 
     const imagesObj = [];
 
-    fs.rmSync(resolve('./src/server/client/public/images/'), {
+    fs.rmSync(`${process.cwd()}/src/client/public/images/`, {
       recursive: true,
       force: true,
     });
 
-    fs.mkdir(resolve('./src/server/client/public/images/'), (err) => {
+    fs.mkdir(`${process.cwd()}/src/client/public/images/`, (err) => {
       if (err) {
-        return console.error(err);
+        return console.error(err + 'Directory not created!');
       }
       console.log('Directory created successfully!');
     });
 
     await Promise.all(
       latinnamesObj.map(async (animal, index) => {
+        Logger.log(animal);
         try {
-          const url = await image_finder.find(animal, {
-            size: 'medium',
-          });
-
+          const url = await this.findImage(animal);
+          //Logger.log({ url });
+          //Logger.debug({ url });
           const imageName = `${animal}${uuidv4()}.jpg`;
-          await downloadImage(
-            `${url}`,
-            resolve(`./src/server/client/public/images/${imageName}`),
-          ).catch((e) => console.log('Error: ', e));
+          if (url) {
+            await downloadImage(
+              `${url}`,
+              `${process.cwd()}/src/client/public/images/${imageName}`,
+            ).catch((e) => console.log('Error: ', e));
+          }
+          /**/
           imagesObj.push({
             name: namesObj[index],
             latinname: animal,
@@ -114,19 +194,19 @@ export class CommandsService {
       }),
     );
 
-    fs.unlink('./src/server/app/data/seed/animals/images.json', function (err) {
+    fs.unlink(process.cwd() + '/src/server/app/data/seed/animals/images.json', function (err) {
       if (err) throw err;
       // if no error, file has been deleted successfully
       console.log('images.json deleted!');
     });
 
-    fs.open('./src/server/app/data/seed/animals/images.json', 'w', function (err, file) {
+    fs.open(process.cwd() + '/src/server/app/data/seed/animals/images.json', 'w', function (err, file) {
       if (err) throw err;
       console.log('Saved!');
     });
 
     fs.writeFileSync(
-      './src/server/app/data/seed/animals/images.json',
+      process.cwd() + '/src/server/app/data/seed/animals/images.json',
       JSON.stringify(imagesObj, null, 4),
       'utf8',
     );
