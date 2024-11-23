@@ -7,7 +7,7 @@ import _SearchField from '@/vendor/SearchField';
 import Navigation from '@/components/common/Navigation';
 import Footer from '@/components/common/Footer';
 import Content from '@/components/common/Content';
-import ContenLoader from '@/components/ContentLoader';
+import ContentLoader from '@/components/ContentLoader';
 
 import { useStoreActions, useStoreState } from 'my-store';
 
@@ -129,12 +129,6 @@ const Page = () => {
             {animals.map((animal) => {
               return (
                 <div key={animal.id} className="min-h-96 mb-0">
-                  {
-                    /*
-
-
-                    */
-                  }
                   {animal?.images[0]?.urlName !== '' ? (
                     <img
                       className="h-48 w-full object-cover"
@@ -182,7 +176,7 @@ const Page = () => {
             <div className="text-2xl">{text}</div>
           </div>
         ) : (
-          <ContenLoader animals={Array(12).fill(0)} />
+          <ContentLoader animals={Array(12).fill(0)} />
         )}
 
         {pages !== null ? (
