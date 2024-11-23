@@ -57,7 +57,7 @@ const user: UserModel = {
         state.userError = payload;
     }),
     signUp: thunk(async (actions, payload: UserRequest) => {
-        await Ajax.post(`auth/signup`, payload);
+        await axios.post(`api/auth/signup`, payload);
     }),
     loadTokenToMemory: action((state, actions) => {
         state.token = localStorage.getItem('token');
@@ -70,7 +70,7 @@ const user: UserModel = {
     }),
     logOut: action((state: any, actions) => {
         state.username = '';
-        sessionStorage.removeItem('token');
+        localStorage.removeItem('token');
     })
 };
 

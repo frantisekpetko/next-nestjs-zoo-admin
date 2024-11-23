@@ -46,7 +46,7 @@ function Page() {
 
   return (
     <>
-      <Navigation token={token} />
+      <Navigation />
         <Content>
           <Heading>
             {token ? 'Hey, You are logged in !' : 'Basic zoo admin app'}

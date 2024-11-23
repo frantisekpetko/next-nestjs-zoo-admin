@@ -3,7 +3,13 @@
 import { useEffect, useState } from "react";
 
 export const useScreenDetector = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      handleWindowSizeChange();
+    }
+  }, []);
 
   const handleWindowSizeChange = () => {
     setWidth(window.innerWidth);
@@ -17,9 +23,9 @@ export const useScreenDetector = () => {
     };
   }, []);
 
-  const isMobile = width <= 768;
-  const isTablet = width <= 1024;
-  const isDesktop = width > 1024;
+  const isMobile = width ? width <= 768 : false;
+  const isTablet = width ? width <= 1024 : false;
+  const isDesktop = width ? width > 1024 : false;
 
-  return { isMobile, isTablet, isDesktop };
+  return { isMobile, isTablet, isDesktop, width };
 };

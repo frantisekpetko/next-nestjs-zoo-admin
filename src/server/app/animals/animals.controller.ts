@@ -15,7 +15,7 @@ import {
 import { AnimalsService } from './animals.service';
 import { CreateAnimalDto } from './dto/create-animal.dto';
 import { UpdateAnimalDto } from './dto/update-animal.dto';
-import { Animal } from '../../entity/animal.entity';
+import { Animal } from 'src/server/entity/animal.entity';
 import { Logger } from '@nestjs/common';
 
 import { FileInterceptor } from '@nestjs/platform-express';
@@ -34,12 +34,11 @@ interface MulterFile {
   buffer: Buffer; // A Buffer of the entire file (only if `storage` is set to `MemoryStorage`)
 }
 
-@Controller('animals')
+@Controller('api/animals')
 export class AnimalsController {
   constructor(private readonly animalsService: AnimalsService) {}
 
   private logger: Logger = new Logger(`<${AnimalsController.name}>`);
-
 
   @Post()
   create(@Body() createAnimalDto: CreateAnimalDto) {

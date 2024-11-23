@@ -1,3 +1,5 @@
+'use client';
+
 import { 
     FunctionComponent, 
     useRef,
@@ -5,51 +7,10 @@ import {
     MutableRefObject, 
     useEffect 
 } from "react";
-import styled from 'styled-components';
 
-const FileInput = styled.input`
-    display: none;
-`;
-
-const ImageUploadContainer = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-bottom: 2em;
-  
-`;
-
-const ImageContainer = styled.div`
-    width: 200px;
-    height: 200px;
-    border: solid 1px black;
-    vertical-align: middle;
-    position: relative;
-`;
-
-const ImageUpload = styled.img`
-    width: 100%;
-    height: 100%;
-
-`;
-
-const Label = styled.div`
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.4);
-    font-size: 18px;
-    width: 100%;
-    font-weight: 800;
-    
-`
+const FileInput = (props: any) => (
+    <input className="hidden" {...props} />
+);
 
 interface Props {
     setSelectedFile: (image: File) => void;
@@ -59,7 +20,6 @@ interface Props {
 }
  
 const UploadImage: FunctionComponent<Props> = (props) => {
-    //console.log(props.image, 'props.image');
     async function dataUrlToFile(dataUrl: string, fileName: string): Promise<File> {
         const res: Response = await fetch(dataUrl);
         const blob: Blob | undefined = await res.blob();
@@ -68,7 +28,6 @@ const UploadImage: FunctionComponent<Props> = (props) => {
 
     useEffect(() => {
         (async () => {
-            console.log('useEffectFile');
             if (props.image !== '' && props.image !== undefined) {
                 props.setSelectedFile(
                     await dataUrlToFile(
@@ -80,33 +39,29 @@ const UploadImage: FunctionComponent<Props> = (props) => {
                 setBase64String(`${window.location.protocol}//${window.location.hostname}:${window.location.port}/images/${props.image}`);
             }  
         })();
-
-       
-        
     }, [])
 
     const [base64String, setBase64String] = useState<string>('data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
-    //const [isFilePicked, setIsFilePicked] = useState(false);
-
     const fileRef = useRef() as MutableRefObject<HTMLInputElement>;
     const changeHandler = (ev: React.ChangeEvent<HTMLInputElement>) => {
-        console.log('changeHandlerFile: ' + ev?.target?.files?.[0]);
         setBase64String(URL.createObjectURL(ev?.target?.files?.[0] as File));
         props.setSelectedFile(ev?.target?.files?.[0] as File);
         props.setIsFilePicked(true);
     };
 
-    return <>
-        <ImageUploadContainer>
-            <ImageContainer
+    return (
+        <div className="w-full h-full flex flex-col justify-center items-center mb-8">
+            <div 
+                className="w-52 h-52 border border-black relative cursor-pointer"
                 onClick={() => { fileRef.current.click(); }}
             >
-                <ImageUpload
+                <img
+                    className="w-full h-full"
                     src={base64String.toString()}
                 />
-                <Label>
+                <div className="flex justify-center absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-40 text-lg font-bold w-full">
                     {props.isFilePicked ? 'Reupload Image' : 'Upload Image'}
-                </Label>
+                </div>
                 <FileInput
                     ref={fileRef}
                     type="file"
@@ -114,9 +69,9 @@ const UploadImage: FunctionComponent<Props> = (props) => {
                     onChange={changeHandler}
                     accept='image/*'
                 />
-            </ImageContainer>
-        </ImageUploadContainer>
-    </>;
+            </div>
+        </div>
+    );
 }
  
 export default UploadImage;

@@ -2,7 +2,6 @@ import { Injectable, Logger } from '@nestjs/common';
 import { CreateAnimalDto } from './dto/create-animal.dto';
 import { UpdateAnimalDto } from './dto/update-animal.dto';
 import { Animal } from '../../entity/animal.entity';
-import { InjectRepository } from '@nestjs/typeorm';
 import { AnimalRepository } from './animals.repository';
 
 @Injectable()
@@ -10,7 +9,6 @@ export class AnimalsService {
   private logger: Logger = new Logger(`<${AnimalsService.name}>`);
 
   constructor(
-    @InjectRepository(AnimalRepository)
     private animalRepository: AnimalRepository,
   ) {}
 

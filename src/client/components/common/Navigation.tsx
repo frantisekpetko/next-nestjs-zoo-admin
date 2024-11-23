@@ -342,25 +342,27 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { AccountCircle, Clear as ClearIcon } from '@mui/icons-material';
-import { useStoreActions } from 'my-store';
+import { useStoreActions, useStoreState } from 'my-store';
 import Link from 'next/link';
 import { useScreenDetector } from 'hooks/useScreenDetector';
 
-export default function Navigation(props: { props: { token: string | null } }) {
+export default function Navigation() {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [open, setOpen] = React.useState(false);
-  const token = props?.token;
+
+  const token = useStoreState((state) => state.user.token);
+  const loadTokenToMemory = useStoreActions((actions) => actions.user.loadTokenToMemory);
+
+  useEffect(() => {
+    loadTokenToMemory();
+    console.log('auth', token);
+  }, []);
 
   const {isMobile, isTablet, isDesktop} = useScreenDetector();
   //const [token, setToken] = React.useState<string | null>(null);
   //const loadTokenToMemory = useStoreActions((actions) => actions?.user?.loadTokenToMemory);
   //const token = useStoreState((state) => state?.user?.token);
 
-  useEffect(() => {
-    //token = localStorage.getItem('token');
-    //setToken(localStorage.getItem('token'));
-    console.log('token', token, React.version);
-  });
 
   const handleFullscreenMenu = () => {
     setOpen(!open);
@@ -586,7 +588,9 @@ export default function Navigation(props: { props: { token: string | null } }) {
               <Box className="
                 flex 
                 items-center
-              ">
+              "
+              sx={{display: 'flex', 'alignItems': 'center' }}
+              >
                 <Link
                   href="/animals"
                   className="
@@ -666,10 +670,10 @@ export default function Navigation(props: { props: { token: string | null } }) {
                 </Menu>
               </Box>
             ) : (
-              <Box>
+              <Box sx={{ display: 'flex' }}>
                 <Link
-                  href="/login"
-                  className="
+                    href="/login"
+                    className="
                     text-white
                     hidden
                     sm:hidden

@@ -1,4 +1,3 @@
-import { User } from './../../../entity/user.entity';
 import { AuthCredentialsDto } from './dto/auth-credentials.dto';
 import { UserRepository } from './user.repository';
 import { Injectable, Logger, UnauthorizedException } from '@nestjs/common';

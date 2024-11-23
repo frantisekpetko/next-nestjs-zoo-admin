@@ -1,13 +1,18 @@
-import { EntityRepository, getConnection, Repository } from 'typeorm';
-import { InternalServerErrorException, Logger } from '@nestjs/common';
+import { DataSource, Repository } from 'typeorm';
+import { Injectable, InternalServerErrorException, Logger } from '@nestjs/common';
 import { Animal } from '../../entity/animal.entity';
 import { Image } from './../../entity/image.entity';
 import { Extlink } from './../../entity/extlink.entity';
 import { CreateAnimalDto } from './dto/create-animal.dto';
 import { UpdateAnimalDto } from './dto/update-animal.dto';
 
-@EntityRepository(Animal)
+@Injectable()
 export class AnimalRepository extends Repository<Animal> {
+
+    constructor(private dataSource: DataSource) {
+        super(Animal, dataSource.createEntityManager());
+    }
+
     private logger: Logger = new Logger(`<${AnimalRepository.name}>`);
 
     async getPagesNumber(limit: number, search: string): Promise<number> {
@@ -120,15 +125,13 @@ export class AnimalRepository extends Repository<Animal> {
     async removeOne(id) {
         this.logger.log(`${id}`);
 
-        const connection = await getConnection();
-
-        await connection.query('PRAGMA foreign_keys=OFF');
-        await getConnection().createQueryBuilder()
+        await this.dataSource.query('PRAGMA foreign_keys=OFF');
+        await this.dataSource.createQueryBuilder()
             .delete()
             .from(Animal)
             .where("id = :id", { id: id })
             .execute();
-        await connection.query('PRAGMA foreign_keys=ON');
+        await this.dataSource.query('PRAGMA foreign_keys=ON');
     }
 
     async createOne(createAnimalDto: CreateAnimalDto) {
@@ -183,9 +186,6 @@ export class AnimalRepository extends Repository<Animal> {
         animal.extlinks = [];
         animal.images = [];
 
-
-
-
         if (updateAnimalDto.image !== '') {
 
             const image: any = new Image();
@@ -213,13 +213,11 @@ export class AnimalRepository extends Repository<Animal> {
                 this.logger.log(e);
             }
             animal.extlinks.push(extLink);
-
         }
 
         try {
-
             this.logger.debug(JSON.stringify(animal), 'DebugAnimal')
-            await getConnection().getRepository(Animal).save(animal);
+            await this.dataSource.getRepository(Animal).save(animal);
 
         } catch (e) {
             this.logger.error(e);

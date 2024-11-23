@@ -127,7 +127,7 @@ const Page: FC = (props: any) => {
                 }
         }
         finally {
-            if (sessionStorage.getItem('accessToken') !== null) {
+            if (localStorage.getItem('token') !== null) {
                 navigate.replace('/');
             }
         }

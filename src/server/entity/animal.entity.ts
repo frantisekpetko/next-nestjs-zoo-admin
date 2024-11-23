@@ -8,7 +8,6 @@ import {
 } from 'typeorm';
 import { CreateDateColumn } from 'typeorm';
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { User } from './user.entity';
 import { Image } from './image.entity';
 import { Extlink } from './extlink.entity';
 

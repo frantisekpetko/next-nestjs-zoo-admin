@@ -2,6 +2,7 @@
 
 import { Action, Thunk, action, thunk } from 'easy-peasy';
 import Ajax from 'tools/Ajax';
+import axios from 'axios';
 
 export interface Animal {
     id: number;
@@ -92,7 +93,7 @@ const animal: AnimalModel = {
         state.pages = payload;
     }),
     getPages: thunk(async (actions, payload) => {
-        const { data } = await Ajax.get('/animals/pages', {
+        const { data } = await axios.get('api/animals/pages', {
             params: {
                 limit: payload.limit,
                 search: payload.search
@@ -104,7 +105,7 @@ const animal: AnimalModel = {
     animal: null,
     animalUpdate: null,
     getAnimals: thunk(async (actions, payload) => {
-        const { data } = await Ajax.get('/animals', {
+        const { data } = await axios.get('api/animals', {
             params: {
                 page: payload.page,
                 limit: payload.limit,
@@ -119,7 +120,7 @@ const animal: AnimalModel = {
         state.animalUpdate = payload;
     }),
     getUpdateAnimal: thunk(async (actions, payload) => {
-        const { data }: any = await Ajax.get(`animals/${payload}`);
+        const { data }: any = await axios.get(`api/animals/${payload}`);
         const extlinks:string[] = data?.extlinks?.map((item: Extlink) => {
             return item.link
         });
@@ -131,7 +132,7 @@ const animal: AnimalModel = {
         state.animals = [...payload];
     }),
     getAnimal: thunk(async (actions, payload) => {
-        const { data } = await Ajax.get(`animals/${payload}`);
+        const { data } = await Ajax.get(`api/animals/${payload}`);
         actions.setAnimal(data);
     }),
     setAnimal: action((state, payload) => {
@@ -144,7 +145,7 @@ const animal: AnimalModel = {
     saveAnimal: thunk(async (actions, payload) => {
         try {
             actions.setLoading(true);
-            const { data } = await Ajax.post('/animals', payload);
+            const { data } = await axios.post('api/animals', payload);
             console.log('data', data);
             //actions.addAnimal(data);
             actions.setLoading(false);
@@ -165,7 +166,7 @@ const animal: AnimalModel = {
         try {
             console.log('payload', payload);
             actions.setLoading(true);
-            await Ajax.delete(`/animals/${payload}`);
+            await axios.delete(`/api/animals/${payload}`);
             actions.setLoading(false);
         } catch (e) {
             console.log('error', e);
@@ -176,7 +177,7 @@ const animal: AnimalModel = {
         try {
             console.log('payload', payload);
             actions.setLoading(true);
-            await Ajax.patch(`/animals/${payload.id}`, payload.data);
+            await axios.patch(`/api/animals/${payload.id}`, payload.data);
             actions.setLoading(false);
         } catch (e) {
             console.log('error', e);
@@ -186,4 +187,3 @@ const animal: AnimalModel = {
 };
 
 export default animal;
-//
