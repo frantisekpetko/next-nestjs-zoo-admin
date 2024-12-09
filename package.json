@@ -33,7 +33,7 @@
     "@apollo/gateway": "^2.9.3",
     "@apollo/server": "^4.11.0",
     "@babel/runtime": "^7.26.0",
-    "@emotion/react": "^11.13.3",
+    "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@fortawesome/free-brands-svg-icons": "^6.7.1",
