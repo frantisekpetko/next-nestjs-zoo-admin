@@ -71,7 +71,7 @@
     "google-auth-library": "^9.14.2",
     "google-image-searcher": "^1.0.9",
     "google-images": "^2.1.0",
-    "graphql": "^16.9.0",
+    "graphql": "^16.10.0",
     "image-search-engine": "1.2.1",
     "js-cookie": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
