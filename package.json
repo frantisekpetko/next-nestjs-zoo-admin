@@ -130,7 +130,7 @@
     "@types/passport-jwt": "^4.0.1",
     "@types/passport-local": "^1.0.34",
     "@types/passport-oauth2": "^1.4.17",
-    "@types/react": "^19.0.4",
+    "@types/react": "^19.0.6",
     "@types/react-dom": "^19.0.2",
     "@types/react-lazy-load-image-component": "^1.5.2",
     "@types/react-router": "^5.1.17",
