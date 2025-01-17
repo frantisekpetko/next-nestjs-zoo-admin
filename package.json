@@ -50,7 +50,7 @@
     "@nestjs/core": "^10.4.15",
     "@nestjs/graphql": "12.2.2",
     "@nestjs/jwt": "^10.2.0",
-    "@nestjs/passport": "^11.0.1",
+    "@nestjs/passport": "^11.0.2",
     "@nestjs/platform-express": "^10.4.15",
     "@nestjs/typeorm": "^10.0.0",
     "@preact/signals-core": "^1.8.0",
