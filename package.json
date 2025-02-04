@@ -42,7 +42,7 @@
     "@mudbill/duckduckgo-images-api": "^1.2.2",
     "@mui/icons-material": "^6.4.3",
     "@mui/lab": "^6.0.0-beta.25",
-    "@mui/material": "^6.4.2",
+    "@mui/material": "^6.4.3",
     "@mui/x-date-pickers": "^7.25.0",
     "@nestjs/apollo": "13.0.2",
     "@nestjs/common": "^11.0.7",
