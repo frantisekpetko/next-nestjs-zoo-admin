@@ -103,7 +103,7 @@
     "serpapi": "^2.1.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
-    "styled-components": "^6.1.14",
+    "styled-components": "^6.1.15",
     "ts-morph": "25.0.0",
     "typeorm": "^0.3.11",
     "uuid": "^11.0.5",
