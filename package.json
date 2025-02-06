@@ -45,7 +45,7 @@
     "@mui/material": "^6.4.3",
     "@mui/x-date-pickers": "^7.25.0",
     "@nestjs/apollo": "13.0.2",
-    "@nestjs/common": "^11.0.7",
+    "@nestjs/common": "^11.0.8",
     "@nestjs/config": "^4.0.0",
     "@nestjs/core": "^11.0.7",
     "@nestjs/graphql": "13.0.2",
