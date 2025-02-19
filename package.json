@@ -66,7 +66,7 @@
     "core-js": "3.40.0",
     "dayjs": "^1.11.13",
     "duckduckgo-images-api": "^1.0.5",
-    "easy-peasy": "^6.0.5",
+    "easy-peasy": "^6.1.0",
     "formik": "^2.2.9",
     "google-auth-library": "^9.15.1",
     "google-image-searcher": "^1.0.9",
