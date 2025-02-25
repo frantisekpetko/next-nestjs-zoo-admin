@@ -158,7 +158,7 @@
     "mime": "^4.0.6",
     "postcss": "^8.5.3",
     "prettier": "^3.5.2",
-    "sass": "^1.85.0",
+    "sass": "^1.85.1",
     "supertest": "^7.0.0",
     "tailwindcss": "^4.0.8",
     "ts-jest": "^29.2.6",
