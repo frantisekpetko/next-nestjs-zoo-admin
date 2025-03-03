@@ -105,7 +105,7 @@
     "sqlite3": "^5.1.7",
     "styled-components": "^6.1.15",
     "ts-morph": "25.0.1",
-    "typeorm": "^0.3.11",
+    "typeorm": "^0.3.21",
     "uuid": "^11.1.0",
     "yup": "^1.6.1"
   },
