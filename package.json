@@ -85,7 +85,7 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "passport-oauth2": "^1.6.1",
-    "react": "^19.0.0",
+    "react": "^19.1.0",
     "react-content-loader": "7.0.2",
     "react-dom": "^19.0.0",
     "react-image": "^4.0.3",
