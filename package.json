@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.13.7",
-    "@apollo/gateway": "^2.10.1",
+    "@apollo/gateway": "^2.10.2",
     "@apollo/server": "^4.12.0",
     "@babel/runtime": "^7.27.0",
     "@emotion/react": "^11.14.0",
