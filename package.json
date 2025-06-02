@@ -41,7 +41,7 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@mudbill/duckduckgo-images-api": "^2.0.1",
     "@mui/icons-material": "^7.1.0",
-    "@mui/lab": "^7.0.0-beta.12",
+    "@mui/lab": "^7.0.0-beta.13",
     "@mui/material": "^7.0.0",
     "@mui/x-date-pickers": "^8.5.0",
     "@nestjs/apollo": "13.1.0",
