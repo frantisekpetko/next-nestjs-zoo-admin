@@ -99,7 +99,7 @@
     "rimraf": "^6.0.1",
     "rpg-awesome": "^0.2.0",
     "rxjs": "^7.8.2",
-    "sass-mq": "^6.0.0",
+    "sass-mq": "^7.0.0",
     "serpapi": "^2.1.0",
     "sqlite": "^5.1.1",
     "sqlite3": "^5.1.7",
