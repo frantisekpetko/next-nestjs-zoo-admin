@@ -38,7 +38,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.0.0",
     "@fortawesome/free-brands-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@fortawesome/react-fontawesome": "^0.2.3",
     "@mudbill/duckduckgo-images-api": "^2.0.1",
     "@mui/icons-material": "^7.2.0",
     "@mui/lab": "^7.0.0-beta.14",
