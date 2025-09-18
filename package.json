@@ -161,7 +161,7 @@
     "sass": "^1.92.1",
     "supertest": "^7.1.4",
     "tailwindcss": "^4.1.13",
-    "ts-jest": "^29.4.2",
+    "ts-jest": "^29.4.3",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.1.1",
