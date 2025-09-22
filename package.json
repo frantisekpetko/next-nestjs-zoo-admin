@@ -107,7 +107,7 @@
     "ts-morph": "27.0.0",
     "typeorm": "^0.3.26",
     "uuid": "^13.0.0",
-    "yup": "^1.7.0"
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@babel/parser": "^7.28.4",
