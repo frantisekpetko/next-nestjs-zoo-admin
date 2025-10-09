@@ -63,7 +63,7 @@
     "class-validator": "^0.14.2",
     "commander": "^14.0.1",
     "cookie-parser": "^1.4.7",
-    "core-js": "3.45.1",
+    "core-js": "3.46.0",
     "dayjs": "^1.11.18",
     "duckduckgo-images-api": "^1.0.5",
     "easy-peasy": "^6.1.0",
