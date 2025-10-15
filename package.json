@@ -68,7 +68,7 @@
     "duckduckgo-images-api": "^1.0.5",
     "easy-peasy": "^6.1.0",
     "formik": "^2.2.9",
-    "google-auth-library": "^10.4.0",
+    "google-auth-library": "^10.4.1",
     "google-image-searcher": "^1.0.9",
     "google-images": "^2.1.0",
     "graphql": "^16.11.0",
