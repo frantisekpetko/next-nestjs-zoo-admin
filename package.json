@@ -160,7 +160,7 @@
     "prettier": "^3.6.2",
     "sass": "^1.93.2",
     "supertest": "^7.1.4",
-    "tailwindcss": "^4.1.14",
+    "tailwindcss": "^4.1.15",
     "ts-jest": "^29.4.5",
     "ts-loader": "^9.5.4",
     "ts-node": "^10.9.1",
