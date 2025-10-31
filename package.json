@@ -64,7 +64,7 @@
     "commander": "^14.0.2",
     "cookie-parser": "^1.4.7",
     "core-js": "3.46.0",
-    "dayjs": "^1.11.18",
+    "dayjs": "^1.11.19",
     "duckduckgo-images-api": "^1.0.5",
     "easy-peasy": "^6.1.0",
     "formik": "^2.2.9",
