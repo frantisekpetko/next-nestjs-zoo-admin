@@ -67,7 +67,7 @@
     "dayjs": "^1.11.19",
     "duckduckgo-images-api": "^1.0.5",
     "easy-peasy": "^6.1.0",
-    "formik": "^2.2.9",
+    "formik": "^2.4.8",
     "google-auth-library": "^10.5.0",
     "google-image-searcher": "^1.0.9",
     "google-images": "^2.1.0",
