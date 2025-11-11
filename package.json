@@ -141,7 +141,7 @@
     "@types/yup": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^8.46.4",
     "@typescript-eslint/parser": "^8.46.2",
-    "autoprefixer": "^10.4.21",
+    "autoprefixer": "^10.4.22",
     "babel-plugin-styled-components": "^2.1.4",
     "connect": "^3.7.0",
     "cookiejar": "^2.1.4",
