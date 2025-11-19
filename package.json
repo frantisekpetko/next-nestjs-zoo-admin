@@ -132,7 +132,7 @@
     "@types/passport-oauth2": "^1.8.0",
     "@types/react": "^19.2.5",
     "@types/react-dom": "^19.2.3",
-    "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/react-lazy-load-image-component": "^1.6.5",
     "@types/react-router": "^5.1.17",
     "@types/react-router-dom": "^5.3.3",
     "@types/reactjs-localstorage": "^1.0.0",
