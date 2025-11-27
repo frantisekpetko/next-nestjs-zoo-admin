@@ -113,7 +113,7 @@
     "@babel/parser": "^7.28.5",
     "@babel/types": "^7.28.5",
     "@faker-js/faker": "^10.1.0",
-    "@nestjs/cli": "^11.0.12",
+    "@nestjs/cli": "^11.0.13",
     "@nestjs/schematics": "^11.0.9",
     "@nestjs/testing": "^11.1.9",
     "@next/eslint-plugin-next": "^16.0.4",
