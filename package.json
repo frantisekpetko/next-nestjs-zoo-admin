@@ -139,7 +139,7 @@
     "@types/styled-components": "^5.1.36",
     "@types/supertest": "^6.0.3",
     "@types/yup": "^0.32.0",
-    "@typescript-eslint/eslint-plugin": "^8.48.1",
+    "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^8.48.1",
     "autoprefixer": "^10.4.22",
     "babel-plugin-styled-components": "^2.1.4",
