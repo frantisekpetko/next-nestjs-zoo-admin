@@ -54,7 +54,7 @@
     "@nestjs/platform-express": "^11.1.12",
     "@nestjs/typeorm": "^11.0.0",
     "@preact/signals-core": "^1.12.2",
-    "@preact/signals-react": "^3.6.1",
+    "@preact/signals-react": "^3.6.2",
     "@types/duckduckgo-images-api": "^1.0.3",
     "apollo-server-express": "^3.11.1",
     "axios": "^1.13.2",
