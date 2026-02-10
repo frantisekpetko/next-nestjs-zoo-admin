@@ -112,7 +112,7 @@
   "devDependencies": {
     "@babel/parser": "^7.29.0",
     "@babel/types": "^7.28.5",
-    "@faker-js/faker": "^10.2.0",
+    "@faker-js/faker": "^10.3.0",
     "@nestjs/cli": "^11.0.16",
     "@nestjs/schematics": "^11.0.9",
     "@nestjs/testing": "^11.1.13",
