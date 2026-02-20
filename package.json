@@ -43,7 +43,7 @@
     "@mui/icons-material": "^7.3.8",
     "@mui/lab": "^7.0.0",
     "@mui/material": "^7.3.8",
-    "@mui/x-date-pickers": "^8.27.0",
+    "@mui/x-date-pickers": "^8.27.2",
     "@nestjs/apollo": "13.2.4",
     "@nestjs/common": "^11.1.14",
     "@nestjs/config": "^4.0.3",
