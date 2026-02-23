@@ -151,7 +151,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "fishery": "^2.4.0",
-    "graphql-zeus": "^7.1.9",
+    "graphql-zeus": "^7.2.0",
     "istanbul-lib-coverage": "^3.2.2",
     "jest": "^30.2.0",
     "json-schema": "^0.4.0",
