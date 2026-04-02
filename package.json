@@ -116,7 +116,7 @@
     "@nestjs/cli": "^11.0.17",
     "@nestjs/schematics": "^11.0.10",
     "@nestjs/testing": "^11.1.17",
-    "@next/eslint-plugin-next": "^16.2.1",
+    "@next/eslint-plugin-next": "^16.2.2",
     "@types/body-parser": "^1.19.6",
     "@types/cookie-parser": "^1.4.10",
     "@types/eslint": "^9.6.1",
