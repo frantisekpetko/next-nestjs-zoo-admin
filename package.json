@@ -157,7 +157,7 @@
     "json-schema": "^0.4.0",
     "mime": "^4.1.0",
     "postcss": "^8.5.10",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "sass": "^1.99.0",
     "supertest": "^7.2.2",
     "tailwindcss": "^4.2.2",
