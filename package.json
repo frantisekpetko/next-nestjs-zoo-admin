@@ -140,7 +140,7 @@
     "@types/supertest": "^7.2.0",
     "@types/yup": "^0.32.0",
     "@typescript-eslint/eslint-plugin": "^8.59.1",
-    "@typescript-eslint/parser": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.2",
     "autoprefixer": "^10.5.0",
     "babel-plugin-styled-components": "^2.1.4",
     "connect": "^3.7.0",
