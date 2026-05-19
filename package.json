@@ -73,7 +73,7 @@
     "google-images": "^2.1.0",
     "graphql": "^16.14.0",
     "image-search-engine": "1.2.1",
-    "js-cookie": "^3.0.6",
+    "js-cookie": "^3.0.7",
     "jsonwebtoken": "^9.0.3",
     "moment": "^2.27.0",
     "nestjs-console": "10.0.0",
