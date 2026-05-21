@@ -142,7 +142,7 @@
     "@typescript-eslint/eslint-plugin": "^8.59.4",
     "@typescript-eslint/parser": "^8.59.3",
     "autoprefixer": "^10.5.0",
-    "babel-plugin-styled-components": "^2.2.0",
+    "babel-plugin-styled-components": "^2.3.0",
     "connect": "^3.7.0",
     "cookiejar": "^2.1.4",
     "cypress": "^15.15.0",
