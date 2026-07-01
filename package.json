@@ -29,7 +29,7 @@
     "f-start": "cd ./src/client && next start"
   },
   "dependencies": {
-    "@apollo/client": "^4.2.3",
+    "@apollo/client": "^4.2.5",
     "@apollo/gateway": "^2.14.2",
     "@apollo/server": "^5.5.1",
     "@babel/runtime": "^8.0.0",
